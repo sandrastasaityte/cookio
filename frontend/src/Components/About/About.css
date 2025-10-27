@@ -1,0 +1,111 @@
+.about {
+  padding: 60px 20px;
+  background-color: #fffaf5;
+}
+
+.about-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.feature-item h3 {
+  font-size: 1.3rem;
+  color: #ff6600;
+  margin-bottom: 8px;
+}
+
+.feature-item p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Right side images */
+.about-images {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  min-width: 250px;
+}
+
+/* Big image on the left */
+.about-images .big-image {
+  width: 60%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Container for 2 smaller images stacked vertically */
+.about-images .small-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.about-images .small-images img {
+  flex: 1; /* split height equally */
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-images {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-images .big-image,
+  .about-images .small-images {
+    width: 100%;
+  }
+
+  .about-images .small-images {
+    flex-direction: row;
+  }
+
+  .about-images .small-images img {
+    flex: 1;
+  }
+}

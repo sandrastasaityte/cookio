@@ -1,0 +1,121 @@
+.popular-food {
+  padding: 60px 20px;
+  background-color: #fffaf5;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #ff6600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Slider container with arrows */
+.slider-container {
+  position: relative;
+}
+
+.food-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+  padding-left: 10px;  /* add space for peek */
+  padding-right: 10px; /* add space for peek */
+}
+
+.food-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.food-slider::-webkit-scrollbar-thumb {
+  background: #ff6600;
+  border-radius: 4px;
+}
+
+/* Arrow buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.arrow.left {
+  left: -10px;
+}
+
+.arrow.right {
+  right: -10px;
+}
+
+.food-card {
+  flex: 0 0 220px;
+  scroll-snap-align: start;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 20px;
+  transition: transform 0.3s; /* smooth hover effect */
+}
+
+.food-card:hover {
+  transform: translateY(-5px); /* subtle lift on hover */
+}
+
+.food-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.food-card h4 {
+  margin: 15px 0 5px;
+  color: #ff6600;
+}
+
+.food-card .price {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.order-btn {
+  padding: 8px 15px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #e65c00;
+}

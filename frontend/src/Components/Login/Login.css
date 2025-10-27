@@ -1,0 +1,156 @@
+/* Login.css */
+
+.login-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #4b5563; /* gray-500 */
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-container h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1f2937; /* gray-800 */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 0.625rem 1rem; /* py-2.5 px-4 */
+  margin-bottom: 1rem;
+  border: 1px solid rgba(107, 114, 128, 0.3); /* gray-500/30 */
+  border-radius: 9999px; /* fully rounded */
+  outline: none;
+  background-color: transparent;
+  color: #1f2937;
+  font-size: 0.875rem;
+  transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+  border-color: #6366f1; /* indigo-500 */
+}
+
+.login-container .forgot-password {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.login-container .forgot-password a {
+  color: #3b82f6; /* blue-500 */
+  text-decoration: underline;
+  font-size: 0.875rem;
+}
+
+.login-container button[type="submit"] {
+  width: 100%;
+  padding: 0.625rem;
+  margin-bottom: 0.75rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: #6366f1; /* indigo-500 */
+  color: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #4f46e5; /* darker indigo */
+}
+
+.login-container .signup-text {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+.login-container .signup-text a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+.login-container .social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.login-container .social-login button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.login-container .social-login .apple-login {
+  background-color: #000;
+  color: white;
+  border: none;
+}
+
+.login-container .social-login .apple-login:hover {
+  background-color: #111;
+}
+
+.login-container .social-login .google-login {
+  background-color: #fff;
+  color: #1f2937;
+  border: 1px solid rgba(107, 114, 128, 0.3);
+}
+
+.login-container .social-login .google-login:hover {
+  background-color: #f3f4f6; /* gray-100 */
+}
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1f2937;
+}

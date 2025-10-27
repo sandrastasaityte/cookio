@@ -1,0 +1,144 @@
+.hero {
+  position: relative;
+  padding: 5rem 2rem;
+  background: #fefefe;
+  overflow: hidden;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.hero-offer {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.hero-price {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 2rem;
+}
+
+.hero-price h4 {
+  margin-right: 0.5rem;
+  font-weight: 500;
+  color: #666;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e63946;
+}
+
+.hero-btn {
+  background-color: #1d4ed8;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+/* Floating shapes */
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  transition: transform 0.2s ease-out;
+}
+
+.shape1 {
+  width: 120px;
+  height: 120px;
+  background-color: #ffb703;
+  top: 10%;
+  left: 5%;
+}
+
+.shape2 {
+  width: 200px;
+  height: 200px;
+  background-color: #023047;
+  bottom: 10%;
+  right: 10%;
+}
+
+.shape3 {
+  width: 80px;
+  height: 80px;
+  background-color: #fb8500;
+  top: 50%;
+  right: 20%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-offer {
+    font-size: 1.75rem;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+  }
+}
