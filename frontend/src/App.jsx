@@ -11,7 +11,7 @@ import AddressForm from "./Components/AddressForm/AddressForm.jsx";
 import MyOrders from "./Components/MyOrders/MyOrders.jsx";
 import Cart from "./Components/Cart/Cart.jsx";
 import Rating from "./Components/Rating/Rating.jsx";
-import Checkout from "./Components/Checkout/Checkout";
+
 
 
 
@@ -28,6 +28,7 @@ export default function App() {
             <>
               <Home />
               <Rating />
+             
             
 
               
@@ -39,7 +40,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/address-form" element={<AddressForm />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<Checkout />} />
+      
         <Route path="/myorders" element={<MyOrders />} />
       </Routes>
 
